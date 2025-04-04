@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Inline styles for additional customization */
+        #about {
+            background: linear-gradient(135deg, #f1faee, #a8dadc);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        #about h2 {
+            font-size: 36px;
+            color: #1d3557;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        #about p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        #team {
+            margin: 40px auto;
+            max-width: 800px;
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(135deg, #a8dadc, #f1faee);
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        #team h2 {
+            font-size: 36px;
+            color: #1d3557;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .team-member {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(135deg, #f1faee, #a8dadc);
+        }
+
+        .team-member h3 {
+            font-size: 24px;
+            color: #264653;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .team-member p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .team-member::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            width: 100px;
+            height: 100px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            z-index: 0;
+            animation: float 4s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Game Hub</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Game Hub is a platform dedicated to bringing you the best classic games in one place. Whether you're looking to relive your childhood memories or discover new favorites, we've got you covered!</p>
+        </section>
+        <section id="team">
+            <h2>Meet the Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <h3>Founder</h3>
+                    <p>Rustic</p>
+                </div>
+                <div class="team-member">
+                    <h3>Designer</h3>
+                    <p>Lucija</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Game Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>

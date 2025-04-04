@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+    <link rel="stylesheet" href="css/style.css?v=4"> <!-- Increment query string -->
+    <style>
+        /* Temporary inline style for debugging */
+        body {
+            background-color: #f4f4f9;
+        }
+        #games {
+            border: 5px solid blue; /* Add a border to test */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Game Hub</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="games.html" class="active">Games</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="games" style="padding: 40px; background: linear-gradient(135deg, #a8dadc, #f1faee); border-radius: 15px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);">
+            <h2 style="font-size: 42px; color: #2a9d8f; text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); margin-bottom: 20px;">Our Games</h2>
+            <p style="font-size: 18px; color: #555; margin-bottom: 30px;">Explore and play our collection of classic games:</p>
+            <div class="games-grid">
+                <a href="games/snake.html" class="game-card">
+                    <h3>Snake</h3>
+                    <p>Relive the classic snake game.</p>
+                </a>
+                <a href="games/tetris.html" class="game-card">
+                    <h3>Tetris</h3>
+                    <p>Stack blocks and clear lines.</p>
+                </a>
+                <a href="games/pong.html" class="game-card">
+                    <h3>Pong</h3>
+                    <p>The original arcade classic.</p>
+                </a>
+                <a href="games/flappybird.html" class="game-card">
+                    <h3>Flappy Bird</h3>
+                    <p>Navigate through the pipes.</p>
+                </a>
+                <a href="games/minesweeper.html" class="game-card">
+                    <h3>Minesweeper</h3>
+                    <p>Find the mines without detonating them.</p>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Game Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
